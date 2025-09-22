@@ -1,0 +1,33 @@
+/* Pseudo-clases  */
+
+
+input:focus {
+    outline: 2px solid #3498db;
+    background-color: #e8f4f8;
+}
+
+li:first-child {
+    color: brown;
+    font-weight: bold;
+}
+
+li:last-child {
+    color: teal;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #a9a9a9;
+}
+
+.quote::after {
+    content:'"';
+    color: black;
+    font-size: 24px;
+}
+
+.quote::before {
+    content:'"';
+    color: black;
+    font-size: 24px;
+}
