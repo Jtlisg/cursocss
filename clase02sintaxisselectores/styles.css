@@ -1,0 +1,55 @@
+
+
+/* Selector de elemento */
+p {
+    margin-bottom: 50px ;
+}
+
+/* Selector de Clase */
+.rojo {
+    color:brown;
+}
+
+.contenedor {
+    border: 3px solid burlywood;
+    
+}
+
+/* Selector de Clase Descendiente */
+.contenedor p {
+    color: cadetblue;
+    font-weight: bold;
+}
+
+
+/* Selector de ID */
+#unico {
+    background-color: yellowgreen;
+}
+
+/* Selector de PSEUDO-CLASES*/
+button:hover {
+    background-color: violet;
+    cursor: pointer;
+    border: 1.2px solid grey;
+    border-radius: 4px;
+}
+
+a:link {
+    color: green;
+}
+
+
+
+/* 
+   Ejemplos: Especifidad en CSS menor a mayor(reescribre las reglas css anteriores)
+   - p                     = 0-0-0-1 (1 punto)
+   - .texto                = 0-0-1-0 (10 puntos)  
+   - #titulo               = 0-1-0-0 (100 puntos)
+   - style="color: red"    = 1-0-0-0 (1000 puntos)
+   - color: red !important = ∞ (10000 puntos - MÁXIMA PRIORIDAD) 
+
+   Ejemplos: Como se suma la especifidad
+   - div.caja              = 0-0-1-1 (11 puntos)
+   - #main .texto p        = 0-1-1-1 (111 puntos)
+   */
