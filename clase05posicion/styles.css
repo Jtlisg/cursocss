@@ -1,0 +1,51 @@
+/* Estilos para las cajas y ver los efectos */
+.contenedor,
+.contenedor-padre,
+.contenedor-scroll,
+.contenedor-zindex{
+    border: 2px solid black;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.caja,
+.hijo-absolute,
+.boton-fixed,
+.elemento-sticky,
+.capa {
+    border: 2px solid brown;
+    padding: 10px;
+}
+
+/* Position Relative
+    jugando con la caja relativa
+*/
+.caja-relative {
+    /* Este deja su espacio y los demas hermanod
+    lo recordaran y respetaran aunque el se alla movido */
+    position: relative;
+    top: 20px;
+    left: 30px;
+}
+
+
+
+/* Position Absolute
+    jugando
+*/
+
+.contenedor-padre{
+    /* debe tener un positio fixed o relative el padre 
+    el hijo usara el absolute*/
+    position: relative;
+    height: 100px;
+}
+
+.hijo-absolute {
+    /* los demas hijos no recordaran el espacio
+    de este otro hijo que pasa a absolute */
+    position:absolute; 
+    top: 10px;
+    right: 10px;
+}
+
