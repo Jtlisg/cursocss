@@ -49,3 +49,65 @@
     right: 10px;
 }
 
+
+/* Position Fixed
+
+*/
+.boton-fixed{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+
+/* Position Sticky
+
+*/
+
+.contenedor-scroll{
+    height: 150px;
+    overflow-y: auto;
+}
+
+.elemento-sticky {
+    position: sticky;
+    top: 0; /*este segun el contenedor padre en este caso contenedor-scroll jugar
+    con 50px 80px y ver el resultado */
+}
+
+
+/* Position z-index 
+
+*/
+
+.contenedor-zindex {
+    position: relative;
+    height: 180px;
+}
+
+.capa {
+    position: absolute;
+    height: 50px;
+
+}
+
+.capa-1{
+    background-color: burlywood;
+    z-index: 1;
+    top: 20px;
+    left: 30px;
+}
+
+.capa-2{
+    background-color: blueviolet;
+    z-index: 2;
+    top: 60px;
+    left: 50px;
+}
+
+.capa-3 {
+    background-color: tomato;
+    z-index: 3;
+    top: 100px;
+    left: 70px;
+}
