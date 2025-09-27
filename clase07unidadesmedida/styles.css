@@ -1,0 +1,44 @@
+.container {
+ border: 2px solid black;
+ padding: 16px;
+ margin-bottom: 24px;   
+}
+
+.box {
+    border: 1px solid brown;
+    padding: 16px;
+    margin-bottom: 16px;
+    background-color: #f0f0f0;    
+}
+
+/* Px es un valor fijo */
+.box-px {
+    width: 200px;
+}
+
+/* % depende de su contenedor padre sus dimensiones */
+
+.box-percent {
+    width: 50%;
+}
+
+/* REM y EM depende del font-size del html 
+1 REM valera 16px
+*/
+.box-rem {
+    width: 15rem;
+}
+
+.box-em {
+    width: 1em;
+}
+
+/* VW y VH */
+.box-vw {
+    width: 30vw;
+}
+
+.box-vh {
+    height: 30vh;
+}
+
