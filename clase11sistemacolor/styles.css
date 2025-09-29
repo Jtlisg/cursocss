@@ -1,0 +1,21 @@
+.color-hex {
+    background-color: #ff5757;
+    /*  a al f y 0 a 9 en un valor de par ff */
+}
+
+.color-rgb {
+    background-color: rgb(52, 100, 90); 
+    /* 0 a 255 cada valor */
+}
+
+.color-hsl {
+    background-color: hsl(130, 100%, 80%);
+    /* 0 al 360  en el color rgb 120 rojo 120 vere 120 azul
+        el segundo parametro es saturacion
+        el terces parametro es iluminacion
+    */
+}
+
+.alpha-100 {
+    background-color:rgba(231, 76, 60, 0.6);
+}
