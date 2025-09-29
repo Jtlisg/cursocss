@@ -1,0 +1,17 @@
+
+
+.normal {
+    font-size: 2rem;
+}
+
+.light {
+    font-weight: 600;
+}
+
+.compact {
+    line-height: 1.9;
+}
+
+.italic {
+    font-style: italic;
+}
