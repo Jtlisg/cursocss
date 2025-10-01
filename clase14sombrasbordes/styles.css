@@ -1,0 +1,38 @@
+div,p {
+    display: inline-block;
+    padding: 20px;
+    margin:10px;
+    background-color: white;
+    min-width: 100px;
+    text-align:center;
+}
+
+.shadow-simple {
+    /* Valores de esta propiedad */
+    /* box-shadow: izquieradesplazamiento abajodesplazamineto blur spread color*/
+    box-shadow: 3px 3px 5px 1px #888;
+}
+
+.shadow-blur {
+    /* Valores de esta propiedad modo inset */
+    /* box-shadow: izquierades abajo des tamañosombra color */
+    box-shadow: inset 0 0 5px #888;
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 2px #88f;
+    font-size: 25px;
+}
+
+.radius-small {
+    border: 2px solid #333;
+    border-radius: 10px;
+
+}
+
+.radius-circle {
+    border: 2px solid #333;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
