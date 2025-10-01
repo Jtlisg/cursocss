@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+
+/*FLEXBOX
+
+display: flex;
+flex-direction:row | row-reverse | column | column-reverse;
+justify-content:;
+align-items:;
+*/
+
+/* El padre contenedor tiene display:flex; */
+.container {
+    display: flex;
+    background: #f4f5d1;
+    padding: 10px;
+    margin-bottom: 20px;
+    min-height: 100px;
+
+}
+
+.item {
+    background: #b3c4d5;
+    color: #fff;
+    margin: 5px;
+    text-align:center;
+    font-weight: bold;
+    padding: 5px;
+
+}
+
+/* Direccion de los hijos flex */
+.column {
+    flex-direction: column;
+    
+}
+
+/* Manipulacion de los hijos flex */
+.center {
+    /* Alinea de izquierda hacia derecha */
+    justify-content: center;
+}
+
+.align {
+    /* Alinea de arriba hacia abajo */
+    align-items: center;
+}
