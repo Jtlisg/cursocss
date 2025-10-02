@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+
+
+.container {
+    display: flex;
+    background: #036285;
+    padding: 10px;
+    margin-bottom: 20px;
+    min-height: 150px;
+
+}
+
+.item {
+    background: #759430;
+    color: #fff;
+    margin: 5px;
+    text-align:center;
+    font-weight: bold;
+    padding: 15px;
+
+}
+/* Sirve para dar tamaño o proporcion relativas */
+.grow {
+    flex-grow:1;
+}
+
+.growtwo {
+    flex-grow: 2;
+}
+
+.flex-1 {
+    flex: 1 ;
+}
+
+.self-start {
+    align-self:self-start;
+}
+
+.self-end {
+    align-self: self-end;
+}
