@@ -1,0 +1,24 @@
+.item {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    /* margin: 3px; */
+}
+
+.grid-simple {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-fr {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.grid-gap {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
