@@ -1,0 +1,114 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.box {
+    background: #30516a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.nav {
+    background: coral;
+    margin-bottom: 20px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.nav-list li a{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.visibility {
+    margin-bottom: 20px;
+}
+
+.mobile {
+    background: brown;
+    color: white;
+    padding: 10px;
+}
+
+.tablet {
+    display: none;
+}
+
+.desktop {
+    display: none;
+}
+
+ .responsive-title {
+    font-size: 1.5rem;
+ }
+
+ .responsive-text {
+    font-size: 1rem;
+ }
+
+ @media (min-width: 768px){
+     .container {
+        flex-direction: row;
+     }
+
+     .box {
+        flex: 1;
+     }
+
+     .nav-list {
+        flex-direction: row;
+     }
+
+     .mobile {
+        display: none;
+     }
+
+     .tablet {
+        display: block;
+        background: chocolate;
+        color: white;
+        padding: 10px;
+        text-align: center;
+     }
+
+     .responsive-title {
+        font-size: 2rem;
+     }
+ }
+
+ @media (min-width: 1024px) {
+    .tablet {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+        padding: 10px;
+        background: crimson;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.1rem;
+    }
+
+    .responsive-title {
+        font-size: 3rem;
+    }
+
+    .responsive-text {
+        font-size: 2rem;
+    }
+ }
