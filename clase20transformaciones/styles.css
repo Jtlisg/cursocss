@@ -1,0 +1,59 @@
+/* Estilos contenedor padre */
+.container {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+    padding: 20px;
+    background: cadetblue;
+    
+}
+
+/* Estilos de los elementos que aplicaremos
+transformaciones de mover - rotar - escalar */
+.box {
+    width: 100px;
+    height: 100px;
+    background: burlywood;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s;
+
+}
+
+/* Movimiento de los elementos en x y y al pasar el mouse */
+.translate-x:hover {
+    transform: translateX(30px);
+}
+
+.translate-y:hover {
+    transform: translateY(-30px);
+}
+
+.translate-xy:hover {
+    transform: translate(20px,20px);
+}
+/* Rotacion de los elementos al pasar el mouse */
+.rotate-45:hover {
+    transform: rotate(45deg);
+}
+
+.rotate-90:hover {
+    transform: rotate(90deg);
+}
+
+.rotate-180:hover {
+    transform: rotate(180deg);
+}
+
+
+.scale-small:hover {
+    transform: scale(0.5);
+}
+
+.scale-large:hover {
+    transform: scale(1.5);
+}
+
