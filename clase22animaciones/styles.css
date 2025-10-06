@@ -1,0 +1,91 @@
+
+/* Estilos a las caja que animaremos */
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: skyblue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+/* Indicaciones de la animacion */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+/* La animacion activada */
+.pulse {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.rotate {
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes bounce {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-30px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    75% {
+        transform: translateY(-5px);
+    }
+}
+
+.bounce {
+    animation: bounce 2s ease infinite;
+}
+
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50px;
+    margin: 20px;
+    animation: spin 1.2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
