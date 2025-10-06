@@ -1,0 +1,53 @@
+
+/* Estilos a los botones */
+.btn {
+    padding: 12px 24px;
+    font-size: 1rem ;
+    border: none;
+    cursor: pointer;
+    background: burlywood;
+    font-weight: 600;
+    color: #333;
+    border-radius: 5px;
+}
+
+/* Padre Contenedor de los botones */
+.buttons {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+/* Transicion de Color */
+.btn-color {
+    transition: background-color 0.3s ease;
+}
+
+/* El que activa la transicion es el hover */
+.btn-color:hover {
+    background-color: #4b564b;
+    color: white;
+}
+
+
+/* Transicion de tamaño */
+.btn-size {
+    transition: transform 0.3s ease;
+}
+
+.btn-size:hover {
+    transform: scale(1.1);
+}
+
+
+/* Varias transiciones en un solo elemento */
+.btn-all {
+    transition: all 0.3s ease;
+}
+
+.btn-all:hover {
+    background-color: #333;
+    color: white;
+    transform: scale(1.1); 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);    
+}
